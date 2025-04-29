@@ -1,7 +1,9 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-// We're removing the separate styles.css import and using only index.css
-import './index.css'; // This now contains both Tailwind and custom styles
+// Zuerst Tailwind CSS importieren
+import './index.css';
+// Dann die eigenen Styles importieren (diese überschreiben Tailwind)
+import './styles/styles.css';
 import App from './App';
 
 const container = document.getElementById('root');

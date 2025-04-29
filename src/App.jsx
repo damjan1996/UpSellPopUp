@@ -3,7 +3,7 @@ import { CartProvider } from "./contexts/CartContext";
 import ProductDetailPage from "./components/ProductDetailPage";
 import ComplementaryPopup from "./components/ComplementaryPopup";
 import Cart from "./components/Cart";
-// No CSS imports here - all styles come from index.css
+// CSS-Imports wurden bereits in index.jsx behandelt
 
 const App = () => {
     return (
@@ -14,10 +14,10 @@ const App = () => {
                 </header>
 
                 <main className="main-content">
-                    <div className="md:col-span-2">
+                    <div className="product-container">
                         <ProductDetailPage />
                     </div>
-                    <div>
+                    <div className="cart-container">
                         <Cart />
                     </div>
                 </main>
